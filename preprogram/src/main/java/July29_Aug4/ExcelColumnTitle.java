@@ -3,6 +3,7 @@ package July29_Aug4;
 
 /*
  * input String
+
  * output int
  * Traverse through the string
  * Result =26 * result +s[i]-'A'+1
