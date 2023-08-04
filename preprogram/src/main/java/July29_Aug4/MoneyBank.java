@@ -30,6 +30,7 @@ public class MoneyBank {
 	{
 		int res=0 ;
 		int sum=0;
+		int sum1= 0;
 		
 		for ( int i =1;i<=n;i++)
 		{
@@ -37,9 +38,17 @@ public class MoneyBank {
 			
 		}
 		
-		//res = sum + sum + n + sum + 2n + sum + 3n
+		for ( int j = n ; j<=(n+1);j++)
+		{
+			sum1= sum1 + j ;
+		}
 		
-		res = (n*sum) +( n+2)*n;
+		//res = sum + sum + n + sum + 2n + sum + 3n+.......sum+(n+1)n
+		
+		
+		
+		
+		res = (n*sum) + sum1;
 				
 		return res;
 		
