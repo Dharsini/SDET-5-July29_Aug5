@@ -14,6 +14,36 @@ package July29_Aug4;
  * 
  */
 
+import org.junit.Assert;
+import org.junit.Test;
+
 public class MoneyBank {
+	
+	@Test
+	public void test1() {
+	int actual = Bank(4);
+	Assert.assertEquals(10, actual);
+	}
+	
+	
+	public int Bank( int n)
+	{
+		int res=0 ;
+		int sum=0;
+		
+		for ( int i =1;i<=n;i++)
+		{
+			sum = sum +i;
+			
+		}
+		
+		//res = sum + sum + n + sum + 2n + sum + 3n
+		
+		res = (n*sum) +( n+2)*n;
+				
+		return res;
+		
+		
+	}
 
 }
