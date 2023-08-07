@@ -1,5 +1,20 @@
 package July29_Aug4;
 
+/*
+ * input int array
+ * outpput int
+ * craete two temp variables and assign them to the first element
+ * traverse through the array
+ * check if the temp1 is lesser than arr [i]
+ * if yes , replace temp2 by temp1
+ * temp1 by arr [i]
+ * 
+ * otherwise if temp2 is less than arr [i]
+ * then temp2= arr[i];
+ * return temp2
+ * 
+ */
+
 
 import java.util.ArrayList;
 import java.util.Arrays;
