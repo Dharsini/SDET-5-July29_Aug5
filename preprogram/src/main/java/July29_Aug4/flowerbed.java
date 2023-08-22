@@ -36,22 +36,23 @@ public class flowerbed {
 		
 		
 		
-		for (int i = 1 ; i<= arr.length ; i++)
+		for (int i = 0 ; i<= arr.length-1 ; i++)
 		{
 			int count=0;
 			
 			
 				if (( arr[i-1]==0) && (arr[i+1] ==0)&& (arr[i]==0))
 				{
-					return true;
+					count ++ ;
+					if ( count == n)
+					{
+						return true; 
+					}
 					
 				}
 				
-				count ++ ;
-				if ( count < n)
-				{
-					return false; 
-				}
+				
+				
 				
 				
 				
