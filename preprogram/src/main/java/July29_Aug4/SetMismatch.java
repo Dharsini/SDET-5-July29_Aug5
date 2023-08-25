@@ -38,12 +38,13 @@ public class SetMismatch {
 		int[] result = new int[2];
 		
 		int count = 0;
-		for ( int i = 1; i<= nums.length;i++) {
+		for ( int i = 0; i< nums.length;i++) {
 			
-			for (int j= 0 ; i < nums.length ; j++ )
+			for (int j= i+1 ; i < nums.length ; j++ )
 			{
-				i=nums[j];
+				if(nums[i]==nums[j]) {
 				count ++;
+				}
 				
 				if ( count == 2)
 				{
