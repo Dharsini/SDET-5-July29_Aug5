@@ -20,13 +20,14 @@ public class SalesforceEditCase {
         // Initialize the WebDriver
         WebDriver driver = new ChromeDriver();
 
-        // Step 1: Login to https://login.salesforce.com
+        //  Login to https://login.salesforce.com
         driver.get("https://login.salesforce.com");
         driver.findElement(By.id("username")).sendKeys("dharsinieee@gmail.com");
         driver.findElement(By.id("password")).sendKeys("Archanadharsini07*");
         driver.findElement(By.id("Login")).click();
 
         
+        // implicit wait 
         
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
         
